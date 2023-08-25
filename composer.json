@@ -1,0 +1,25 @@
+{
+    "name": "cirkle/contact",
+    "description": "This will send email to admin.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "User",
+            "email": "jaypalsinhk.cirklestudio@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Cirkle\\Contact\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cirkle\\Contact\\ContactServiceProvider"
+            ]
+        }
+    }
+}
