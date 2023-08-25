@@ -20,5 +20,9 @@ class ContactServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+
+        $this->publishes([
+            __DIR__ . '/routes/custom.php' => base_path('/routes/custom.php'),
+        ]);
     }
 }
